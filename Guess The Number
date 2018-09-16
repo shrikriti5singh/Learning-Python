@@ -1,0 +1,31 @@
+# this is a number guessing game
+
+#import this to use pre defined functions of random
+import random
+
+print('Whats your name')
+name = input()
+print('hi '+ str(name) + '. Welcome to the game')
+
+secretNum = random.randint(0,100)
+print('take a guess')
+num = int(input())
+
+#use this variable to keep track of number of guesses by the user
+count = 1
+
+while( num != secretNum):
+  if num < secretNum:
+    print('your guess is too low')
+    count = count + 1
+  elif num > secretNum:
+    print('your guess is too high')
+    count = count + 1
+  if count > 6:
+    print('you\'ve exhausted your turns')
+    break
+  num = int(input())
+  
+#out of while loop  
+if count < 6:
+  print('you guessed it right. Number of guesses took: '+ str(count))
