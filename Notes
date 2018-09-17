@@ -1,0 +1,21 @@
+There's no increament or decreament operator in Python.
+
+Lists are mutable whereas Tuples aren't.
+
+Tuples are faster than lists.
+
+'pass' statement does nothing. Can be used when a statement is required. 
+
+Find power y of a number x: x**y
+
+Use dict() to create a new dictionary which is used as key-value pairs.
+  Some important syntax:
+    - check if a key is present in the dictionary- if 'xyz' in d
+      where 'xyz' is a key in dict() 'd'
+    - Delete a key- del d['xyz']
+    - Iteration
+      for i in d : 
+        print "%s  %d" %(i, d[i])
+      OR
+      for index, key in enumerate(d): 
+        print index, key, d[key]
